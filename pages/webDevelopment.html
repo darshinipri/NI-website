@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon (2).png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>NUNIZ INFOTECH</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/css/responsive.css" rel="stylesheet" />
+  <!-- nav bar css -->
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Add CSS for the left and right service items */
+    .service-item {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icon-blue {
+    color: #020230;
+    margin-right: 20px;
+}
+
+/* Add margin between service items */
+.service-col {
+    margin-bottom: 2rem;
+}
+
+    /* Position the left service item */
+    .service-item.left {
+      animation: fadeInLeft 0.5s both;
+    }
+
+    /* Position the right service item */
+    .service-item.right {
+      animation: fadeInRight 0.5s both;
+    }
+
+    /* Additional styles to center the headings */
+    .service-item h3 {
+      text-align: center;
+    }
+
+    /* Define the fade-in animations */
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area scale-up">
+    <!-- header section starts -->
+    <header>
+      <a class="navbar-brand" href="index.html">
+        <span style="margin-top: 2.5rem;" class="content">
+          <h1>Nuniz Infotech</h1>
+          <h1>Nuniz Infotech</h1>
+        </span>
+      </a>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="menu-bar menu-bar1"></div>
+        <div class="menu-bar menu-bar2"></div>
+        <div class="menu-bar menu-bar3"></div>
+      </div>
+
+      <div class="menu">
+        <div class="menu-con" style="transition-delay: 0.1s;"><a href="index.html">HOME</a></div>
+        <div class="menu-con" style="transition-delay: 0.2s;"><a href="pages/about.html">ABOUT</a></div>
+        <div class="menu-con" style="transition-delay: 0.3s;"><a href="pages/service.html">SERVICES</a></div>
+        <div class="menu-con" style="transition-delay: 0.4s;"><a href="Cities.html">CITIES</a></div>
+        <div class="menu-con" style="transition-delay: 0.5s;"><a href="contact.html">CONTACT US</a></div>
+      </div>
+    </header>
+    <!-- end header section -->
+<div style="margin-top: 5rem;"></div>
+
+
+  <section class="web-development-services" style="background-color: white; padding: 60px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-container text-center" style="justify-content: center; align-items: center;">
+                    <h2 class="animate__animated animate__fadeInDown">Our Web Development Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2rem;"> <!-- Add margin-top for spacing -->
+            <div class="col-md-6" style="margin-bottom: 2rem;"> <!-- Add margin-bottom for spacing -->
+                <div class="service-item left" style="display: flex; align-items: center; text-align: center;">
+                    <i class="fas fa-desktop fa-3x animate__animated animate__bounceInLeft icon-blue" ></i>
+                    <h3 class="animate__animated animate__fadeInLeft">Web Design</h3>
+                </div>
+                <p class="animate__animated animate__fadeInLeft">Create a stunning online presence with our web design services. Our experienced designers craft responsive and user-friendly websites that leave a lasting impression on your visitors.</p>
+                <ul class="animate__animated animate__fadeInLeft">
+                    <li>Customized website designs</li>
+                    <li>Mobile-responsive layouts</li>
+                    <li>User-centric design principles</li>
+                    <li>Optimized for SEO</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-bottom: 2rem;"> <!-- Add margin-bottom for spacing -->
+                <div class="service-item right" style="display: flex; align-items: center; text-align: center;">
+                    <i class="fas fa-shopping-cart fa-3x animate__animated animate__bounceInRight icon-blue" ></i>
+                    <h3 class="animate__animated animate__fadeInRight">E-Commerce Development</h3>
+                </div>
+                <p class="animate__animated animate__fadeInRight">Enhance your online business with our E-Commerce Development services. We provide robust e-commerce solutions that help you sell products and services online efficiently.</p>
+                <ul class="animate__animated animate__fadeInRight">
+                    <li>Secure payment gateways</li>
+                    <li>Product catalog management</li>
+                    <li>Order processing and tracking</li>
+                    <li>Shopping cart optimization</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-bottom: 2rem;"> <!-- Add margin-bottom for spacing -->
+                <div class="service-item left" style="display: flex; align-items: center; text-align: center;">
+                    <i class="fas fa-cogs fa-3x animate__animated animate__bounceInLeft icon-blue" ></i>
+                    <h3 class="animate__animated animate__fadeInLeft">Custom Web Development</h3>
+                </div>
+                <p class="animate__animated animate__fadeInLeft">For unique and tailored web solutions, our Custom Web Development service is the perfect choice. We design and develop websites from scratch to meet your specific business needs.</p>
+                <ul class="animate__animated animate__fadeInLeft">
+                    <li>Custom web application development</li>
+                    <li>Scalable and flexible solutions</li>
+                    <li>Integration with third-party systems</li>
+                    <li>Technical support and maintenance</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-bottom: 2rem;"> <!-- Add margin-bottom for spacing -->
+                <div class="service-item right" style="display: flex; align-items: center; text-align: center;">
+                    <i class="fas fa-cog fa-3x  animate__animated animate__bounceInRight icon-blue" ></i>
+                    <h3 class="animate__animated animate__fadeInRight">CMS (Content Management System) Development</h3>
+                </div>
+                <p class="animate__animated animate__fadeInRight">Simplify content management and website maintenance with our CMS development services. We build user-friendly systems for easy content updates.</p>
+                <ul class="animate__animated animate__fadeInRight">
+                    <li>Custom CMS development</li>
+                    <li>Content editing and publishing</li>
+                    <li>User roles and permissions</li>
+                    <li>Training and support</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-bottom: 2rem;"> <!-- Add margin-bottom for spacing -->
+                <div class="service-item left" style="display: flex; align-items: center; text-align: center;">
+                    <i class="fas fa-clock fa-3x animate__animated animate__bounceInLeft icon-blue" ></i>
+                    <h3 class="animate__animated animate__fadeInLeft">24/7 Hours Services</h3>
+                </div>
+                <p class="animate__animated animate__fadeInLeft">We provide round-the-clock services to ensure that your needs are met at any time of the day or night. Our team is available 24/7 to assist you with any inquiries or support you may require. We are committed to On-Time Delivery for all your projects.</p>
+                <ul class="animate__animated animate__fadeInLeft">
+                    <li>Immediate response to inquiries</li>
+                    <li>Quick issue resolution</li>
+                    <li>24/7 customer support</li>
+                    <li>Regular project updates</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="margin-bottom: 2rem;"> <!-- Add margin-bottom for spacing -->
+                <div class="service-item right" style="display: flex; align-items: center; text-align: center;">
+                    <i class="fas fa-globe fa-3x animate__animated animate__bounceInRight icon-blue" ></i>
+                    <h3 class="animate__animated animate__fadeInRight">On-Time Delivery Services All Over the World</h3>
+                </div>
+                <p class="animate__animated animate__fadeInRight">We are dedicated to delivering projects on time, no matter where you are located. Our global On-Time Delivery Services ensure that your project is completed as promised, no matter where you are in the world.</p>
+                <ul class="animate__animated animate__fadeInRight">
+                    <li>Global project delivery</li>
+                    <li>Timely project milestones</li>
+                    <li>International time zone coverage</li>
+                    <li>Fast response to global inquiries</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+    <!-- info section -->
+    <section class="info_section layout_padding2" style="margin-top: 6rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_contact">
+              <h4>
+                Address
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                  # 5/2, 2nd D cross Ramaiah layout, kammanahalli, bengaluru-560084.
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Call +91 9591669999
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                 nunizinfotech@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_link_box">
+              <h4>
+                Links
+              </h4>
+              <div class="info_links">
+                <a class="" href="/index.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Home
+                </a>
+                <a class="" href="/about.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  About
+                </a>
+                <a class="" href="/service.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Services
+                </a>
+                <a class="" href="cities.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Cities
+                </a>
+                <a class="active" href="/contact.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_detail">
+              <h4>
+                Info
+              </h4>
+              <p>
+                Let's Collaborate on Your SEO Strategy.Our Doors are Always Open for Your Questions,Start Your SEO Journey Today. Connect with Our Friendly SEO Team.Request a Consultation and Get Started.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-0">
+            <h4>
+             Request A Quote
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">
+              Submit
+              </button>
+            </form>
+          </div>
+        </div>
+    </section>
+    <!-- end of info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="index.html">NUNIZ INFOTECH</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="/js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="/js/custom.js"></script>
+  <!-- navbar js -->
+  <script src="/js/navbar.js"></script>
+  <script>
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.3, // Adjust this value as needed
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elementsToAnimate = document.querySelectorAll('.fade-in');
+    elementsToAnimate.forEach(element => {
+      observer.observe(element);
+    });
+  </script>
+
+</body>
+
+</html>

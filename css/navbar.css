@@ -1,0 +1,74 @@
+
+ .menu-con {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s, opacity 0.3s;
+}
+
+.menu-con.open {
+    margin-top: -.5rem;
+    height: 800px;
+    width: 300px;
+    opacity: 1;
+}
+
+.menu a {
+    z-index: 2;
+    -webkit-align-self: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.menu {
+    margin-top: -3.3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s
+}
+
+.menu-con:nth-child(1) {
+    --i: 1;
+    background: #593d85;
+}
+
+.menu-con:nth-child(2) {
+    --i: 2;
+    background: #3d2d57;
+}
+
+.menu-con:nth-child(3) {
+    --i: 3;
+    background: #251942;
+}
+
+.menu-con:nth-child(4) {
+    --i: 4;
+    background: #1b0d41;
+}
+
+.menu-con:nth-child(5) {
+    --i: 5;
+    background: #12033f;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-con {
+        animation: none;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s, opacity 0.3s;
+    }
+
+    .menu-con.open {
+        margin-top: -1rem;
+        height:80px;
+    }
+
+    .menu a {
+        font-size: large; 
+    }
+}
+ 

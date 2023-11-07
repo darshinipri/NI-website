@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Corrected value -->
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon (2).png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>NUNIZ INFOTECH</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/style.css" rel="stylesheet" />
+  <!-- nav bar css -->
+  <link rel="stylesheet" href="/css/navbar.css">
+  <style>
+    /* CSS for the About Us section animation */
+    .about_section {
+      text-align: justify;
+      min-height: 60vh;
+      animation: fadeInUp 3s both;
+      color: black;
+    }
+
+    /* Animation for the heading */
+    .about_section h1,
+    .about_section h2 {
+      animation: fadeInUp 1.5s both;
+    }
+
+    /* Animation for the paragraph */
+    .about_section p {
+      color: #000 !important;
+      animation: fadeInLeft 3s both;
+    }
+
+    /* Animation for the image */
+    .img-box img {
+      animation: fadeInRight 2.5s both;
+    }
+
+    /* Style the service content */
+    .service-content {
+      display: none;
+      padding: 20px;
+      background-color: #f7f7f7;
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+    }
+
+    /* Style the active service content */
+    .service-content.active {
+      display: block;
+    }
+
+
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header>
+      <a class="navbar-brand" href="index.html">
+        <span style="margin-top: 2.1rem; margin-bottom: 1.5rem;" class="content">
+          <h1>Nuniz Infotech</h1>
+          <h1>Nuniz Infotech</h1>
+        </span>
+      </a>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="menu-bar menu-bar1"></div>
+        <div class="menu-bar menu-bar2"></div>
+        <div class="menu-bar menu-bar3"></div>
+
+      </div>
+
+      <div class="menu">
+        <div class="menu-con" style="transition-delay: 0.1s;"><a href="/index.html">HOME</a></div>
+        <div class="menu-con" style="transition-delay: 0.2s;"><a href="about.html">ABOUT</a></div>
+        <div class="menu-con" style="transition-delay: 0.3s;"><a href="service.html">SERVICES</a></div>
+        <div class="menu-con" style="transition-delay: 0.4s;"><a href="Cities.html">CITIES</a></div>
+        <div class="menu-con" style="transition-delay: 0.5s;"><a href="contact.html">CONTACT US</a></div>
+      </div>
+    </header>
+    <!-- end header section -->
+
+
+    <!-- service section -->
+
+    <div style="margin-top: 3rem;"></div>
+
+  
+    <section class="service_section layout_padding " style="background: white;">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Our Services
+          </h2>
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/images/coding1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Web Development 
+                </h4>
+                <p>
+                  We build custom websites which is user friendly and scalable, designing, building, and maintaining the  web applications.   </p>    
+                         <a href="webDevelopment.html">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/images/s6.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Web Designing 
+                </h4>
+                <p>
+                  Web designing for your company website enhances user experience,visually communicates the brand's professionalism and credibility.    </p>
+                            <a href="pages/rankTracking.html">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/images/SEO-1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Search Engine Optimization
+                </h4>
+                <p>
+                  It involves evaluating the links that point to your website (backlinks) as well as those pointing to your competitors' websites.              </p>
+                <a href="pages/backlink.html">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img  src="/images/social-media1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Social Media Optimization
+                </h4>
+                <p>
+                 It helps identifying the specific words keywords that people use in search engines to find info related to your website.            </p>
+                <a href="pages/keywordresearch.html">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img   src="/images/digital marketing Icon.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Digital marketing 
+                </h4>
+                <p>
+                  Optimizing individual web pages to improve their search engine rankings. This includes optimizing meta tags, content, headings, and internal linking.              </p>
+                <a href="pages/onPage.html">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/images/app-development1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Mobile App Development
+                </h4>
+                <p>
+                  We specialize in mobile app development to create innovative solutions and customized mobile apps to meet the unique needs and goals of our clients. 
+                                         </p>
+                <a href="pages/ecommerce.html">
+                  Read More
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <!-- server section -->
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_contact">
+              <h4>
+                Address
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    # 5/2, 2nd D cross Ramaiah layout, kammanahalli, bengaluru-560084.
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Call +91 9591669999
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    nunizinfotech@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_link_box">
+              <h4>
+                Links
+              </h4>
+              <div class="info_links">
+                <a class="" href="/index.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Home
+                </a>
+                <a class="" href="/about.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  About
+                </a>
+                <a class="active" href="/service.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Services
+                </a>
+                <a class="" href="cities.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Cities
+                </a>
+                <a class="" href="/contact.html">
+                  <img src="/images/nav-bullet.png" alt="">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_detail">
+              <h4>
+                Info
+              </h4>
+              <p>
+                Let's Collaborate on Your SEO Strategy.Our Doors are Always Open for Your Questions,Start Your SEO
+                Journey Today. Connect with Our Friendly SEO Team.Request a Consultation and Get Started.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-0">
+            <h4>
+              Request A Quote
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- header ending div -->
+        <!-- </div> -->
+    </section>
+    <!-- end of info section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="/index.html">NUNIZ INFOTECH</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQuery -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/custom.js"></script>
+    <!-- Navbar JS -->
+    <script src="/js/navbar.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carouselItems = document.querySelectorAll('[data-toggle="content"]');
+
+        carouselItems.forEach(function (item) {
+          item.addEventListener("click", function () {
+            // Hide all service contents
+            const serviceContents = document.querySelectorAll(".service-content");
+            serviceContents.forEach(function (content) {
+              content.classList.remove("active");
+            });
+
+            // Show the corresponding service content
+            const target = this.getAttribute("data-target");
+            const serviceContent = document.getElementById(target);
+            serviceContent.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </div>
+  </div>
+</body>
+
+</html>
