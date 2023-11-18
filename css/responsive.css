@@ -155,6 +155,40 @@
     width: 100px; 
  
 }
+.content h1{
+  margin-left: 3rem;
+}
+
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens, e.g., tablets and mobile devices */
+  .col-md-5 {
+    width: 100%;
+    margin-bottom: 20px; /* Add some spacing between columns on smaller screens */
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .center-image {
+    width: 100%;
+    position: static; /* Reset position for smaller screens */
+    transform: none; /* Reset transform for smaller screens */
+    margin-bottom: 20px; /* Add some spacing between columns on smaller screens */
+  }
+
+  .orbit {
+    width: 100%;
+    position: static; /* Reset position for smaller screens */
+    transform: none; /* Reset transform for smaller screens */
+  }
+
+  .orbit ul {
+    width: 100%;
+    transform-origin: center;
+  }
 }
 
 @media (min-width: 1200px) {
