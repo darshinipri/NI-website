@@ -842,15 +842,16 @@ a:focus {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 
     a {
       display: flex;
-      align-items: center;
+      align-items: start;
       margin-bottom: 15px;
-      color: $white;
+      
 
       img {
-        margin-right: 10px;
+        margin-right: 5%;
       }
 
       &:hover,

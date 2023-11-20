@@ -149,4 +149,13 @@ $('.team_carousel').owlCarousel({
       $this.countTo(options);
     }
   });
-  
+
+  // animations
+  document.addEventListener('DOMContentLoaded', function () {
+
+    setTimeout(() => {
+      document.querySelector('.scale-up.right').classList.remove('scale-up');
+    }, 600);
+  });
+  // 
+ 
