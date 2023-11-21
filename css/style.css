@@ -1312,6 +1312,7 @@ h3 {
   .menu-con {
     min-width: 100%
   }
+<<<<<<< HEAD
 }
 /* number  */
 @media screen and (max-width: 1024px) {
@@ -1388,4 +1389,6 @@ margin-bottom: 2rem;
   pad: 0.7em 0;
   font-weight: 400;
   line-height: 0;
+=======
+>>>>>>> 6d488b7ca299c2585e343f011b12c2f693203d04
 }

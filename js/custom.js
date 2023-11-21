@@ -156,6 +156,10 @@ $('.team_carousel').owlCarousel({
     setTimeout(() => {
       document.querySelector('.scale-up.right').classList.remove('scale-up');
     }, 600);
+<<<<<<< HEAD
   });
   // 
  
+=======
+  });
+>>>>>>> 6d488b7ca299c2585e343f011b12c2f693203d04
