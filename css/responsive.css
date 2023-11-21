@@ -3,6 +3,9 @@
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
+  body{
+    overflow-x: hidden !important;
+  }
   .hero_area {
     min-height: auto;
   }
@@ -104,6 +107,9 @@
 }
 
 @media (max-width: 576px) {
+  body{
+    overflow-x: hidden !important;
+  }
   .slider_section{
     margin-top: 3rem;
   }  
@@ -139,6 +145,9 @@
 }
 
 @media (max-width: 480px) {
+  body{
+    overflow-x: hidden !important;
+  }
   .content h3{
     margin-left: -8rem;
     font-size: 2.2rem;
@@ -180,7 +189,6 @@
 
 .about_section{
   margin-top: -3rem;
-<<<<<<< HEAD
   
 }
 .about_section .detail-box{
@@ -192,19 +200,15 @@
   margin-left: 2rem;
 }
 .info_section{
-  margin-top: 22rem;
+  margin-top: 26rem;
 }
 .info_links{
   display: flex;
   flex-direction: row;
 }
-=======
+.service_section .container{
+  margin-left: 1.5rem;
 }
-.about_section .detail-box{
-  font-size: medium;
-}
-
->>>>>>> 6d488b7ca299c2585e343f011b12c2f693203d04
 }
 
 @media (max-width: 420px) {}
@@ -227,35 +231,7 @@
 
 }
 
-@media (max-width: 768px) {
-  /* Adjustments for smaller screens, e.g., tablets and mobile devices */
-  .col-md-5 {
-    width: 100%;
-    margin-bottom: 20px; /* Add some spacing between columns on smaller screens */
-  }
 
-  .col-md-6 {
-    width: 100%;
-  }
-
-  .center-image {
-    width: 100%;
-    position: static; /* Reset position for smaller screens */
-    transform: none; /* Reset transform for smaller screens */
-    margin-bottom: 20px; /* Add some spacing between columns on smaller screens */
-  }
-
-  .orbit {
-    width: 100%;
-    position: static; /* Reset position for smaller screens */
-    transform: none; /* Reset transform for smaller screens */
-  }
-
-  .orbit ul {
-    width: 100%;
-    transform-origin: center;
-  }
-}
 
 @media (min-width: 1200px) {
   .container {

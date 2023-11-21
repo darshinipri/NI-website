@@ -7,12 +7,19 @@ html {
   margin: 0;
   padding: 0;
 }
-
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #0c0c0c;
   background-color: #EEF5FF;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /* heading title */
 .content {
@@ -124,7 +131,11 @@ body {
   100% { color: #3498db; }
 }
 
-.heading_container h3 span {
+.heading_container h3 span{
+  display: inline-block;
+  animation: colorChange 4s infinite;
+}
+.heading_container h2 span{
   display: inline-block;
   animation: colorChange 4s infinite;
 }
@@ -908,17 +919,19 @@ a:focus {
 
 .contact_section {
   position: relative;
-  height: 80vh;
+  height: 90vh;
+ 
 }
 
 .contact_section .heading_container {
   margin-bottom: 45px;
 }
 
-.contact_section .form_container input {
+.contact_section .container input {
+ 
   width: 100%;
   border: 1px solid #b0b0b0;
-  height: 60px;
+  height: 50px;
   margin-bottom: 25px;
   padding-left: 15px;
   background-color: transparent;
@@ -926,27 +939,8 @@ a:focus {
   color: #101010;
 }
 
-.contact_section .form_container input::-webkit-input-placeholder {
-  color: #b0b0b0;
-}
 
-.contact_section .form_container input:-ms-input-placeholder {
-  color: #b0b0b0;
-}
-
-.contact_section .form_container input::-ms-input-placeholder {
-  color: #b0b0b0;
-}
-
-.contact_section .form_container input::placeholder {
-  color: #b0b0b0;
-}
-
-.contact_section .form_container input.message-box {
-  height: 140px;
-}
-
-.contact_section .form_container .btn_box {
+.contact_section .container .btn_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,24 +949,38 @@ a:focus {
   justify-content: center;
 }
 
-.contact_section .form_container button {
+
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: transparent;
+  
+}
+.btn-btn{
   border: none;
   text-transform: uppercase;
   display: inline-block;
   padding: 15px 65px;
   background-color: #ff4646;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 40px 80px;
   border: 1px solid #ff4646;
   -webkit-transition: all .3s;
   transition: all .3s;
-  font-weight: bold;
+  font-weight: bold;margin-bottom: 2rem;
 }
-
-.contact_section .form_container button:hover {
+.btn-btn:hover{
   background-color: transparent;
   color: #ff4646;
 }
+
 
 /* slide */
 /* main head */
@@ -1312,7 +1320,6 @@ h3 {
   .menu-con {
     min-width: 100%
   }
-<<<<<<< HEAD
 }
 /* number  */
 @media screen and (max-width: 1024px) {
@@ -1332,6 +1339,12 @@ h3 {
     flex-wrap: wrap;
     gap: 30px;
   }
+  .number_counter{
+    background-color: #020230;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
   .number_counter .container {
     width: calc(50% - 40px);
     height: 30vmin;
@@ -1340,23 +1353,29 @@ h3 {
 }
 @media screen and (max-width: 480px) {
   .number_counter .wrapper {
+  
     gap: 15px;
   }
   .number_counter .container {
     width: 100%;
     height: 25vmin;
-    font-size: 8px;
+    font-size: 5px;
+  }
+  .number_counter .text {
+    color: #e0e0e0;
+    font-size: .1cm;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 100;
+    line-height: 0;
   }
 }
 .number_counter .wrapper {
   background-color: #020230;
-
-  width: 100vw;
   top: 50%;
-  left: 50%;
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 20px;
 }
 .number_counter .container {
   width: 28vmin;
@@ -1379,8 +1398,8 @@ margin-bottom: 2rem;
   color: #ffffff;
   display: grid;
   place-items: center;
-  font-weight: 600;
-  font-size: 3em;
+  font-weight: 400;
+  font-size: 2em;
 }
 .number_counter .text {
   color: #e0e0e0;
@@ -1389,6 +1408,4 @@ margin-bottom: 2rem;
   pad: 0.7em 0;
   font-weight: 400;
   line-height: 0;
-=======
->>>>>>> 6d488b7ca299c2585e343f011b12c2f693203d04
 }

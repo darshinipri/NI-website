@@ -1,27 +1,33 @@
 function sendMail() {
-    var params = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    //   phone: document.getElementById("phone").value,
-    };
-  
-    const serviceID = "Yservice_n1br5d7";
-    const templateID = "Ytemplate_4qf9kwh";
-  
-      emailjs.send(sYservice_n1br5d7, template_4qf9kwh, params)
-      .then(res=>{
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("message").value = "";
-          document.getElementById("phone").value="";
-          console.log(res);
-          alert("Your message sent successfully!!")
-  
-      })
-      .catch(err=>console.log(err));
-  
-  }
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+    contact: document.getElementById("contact").value,
+  };
+
+  const serviceID = "service_t1c3z62";
+  const templateID = "template_4qf9kwh";
+  const userID = "2vB4jopM-hK4OiVbR"; // Replace with your EmailJS public key
+
+  emailjs.init(userID); // Initialize EmailJS with the public key
+
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      document.getElementById("contact").value = "";
+      console.log(res);
+      alert("Your message sent successfully!!");
+    })
+    .catch(err => {
+      console.log(err);
+      alert("Error sending message. Please try again later.");
+    });
+}
+
+
   let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
