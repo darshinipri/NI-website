@@ -37,7 +37,7 @@ valueDisplays.forEach((valueDisplay) => {
   let duration = Math.floor(interval / endValue);
   let counter = setInterval(function () {
     startValue += 1;
-    valueDisplay.textContent = startValue;
+    valueDisplay.textContent = startValue+"+";
     if (startValue == endValue) {
       clearInterval(counter);
     }
