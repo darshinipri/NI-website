@@ -67,11 +67,207 @@
       border-radius: 5px;
 
     }
+    #homewebdesign,
+#homewebdev {
+    padding-bottom: 60px
+}
+pre {
+            white-space: pre-wrap;
+        }
+
+        .site-main ul li:first-child,
+        .stores ol li p {
+            margin-top: 0 !important;
+        }
+
+        .home-webdevelopment ul li:after {
+            content: none !important;
+        }
+
+        .section-content {
+            overflow: hidden;
+        }
+
+        .page-banner h2 {
+            margin-top: 30px !important;
+            margin-bottom: 30px !important;
+        }
+
+        .info-buttons-wrapper .container a {
+            opacity: 0;
+        }
+
+        #sidebar {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+
+        .cookie-law {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .span.bigletter.animate-bigletter {
+            color: transparent;
+        }
+
+        .temp-hide {
+            -webkit-transform: translate(0, 100%);
+            -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%)
+        }
+
+        .vert-loader {
+            position: fixed;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 0;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+        }
+
+        .vert-loader.show .vert-loader-bar {
+            height: 100%;
+        }
+
+        .vert-loader.active {
+            height: 100%;
+        }
+
+        .vert-loader-bar {
+            background-color: #333;
+            width: -webkit-calc(100% / 6);
+            width: calc(100% / 6);
+            height: 0;
+            -webkit-transition: height 0.3s;
+            transition: height 0.3s;
+        }
+
+        .vert-loader-bar.bar-0 {
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        .vert-loader-bar.bar-1 {
+            -webkit-transition-delay: 30ms;
+            transition-delay: 30ms;
+        }
+
+        .vert-loader-bar.bar-2 {
+            -webkit-transition-delay: 60ms;
+            transition-delay: 60ms;
+        }
+
+        .vert-loader-bar.bar-3 {
+            -webkit-transition-delay: 90ms;
+            transition-delay: 90ms;
+        }
+
+        .vert-loader-bar.bar-4 {
+            -webkit-transition-delay: 120ms;
+            transition-delay: 120ms;
+        }
+
+        .vert-loader-bar.bar-5 {
+            -webkit-transition-delay: 150ms;
+            transition-delay: 150ms;
+        }
+
+        /* 600 to X */
+
+        @media (max-width:640px) {
+            .page-banner.home-banner>.container {
+                margin-top: 100px !important;
+            }
+          }
 
     /* Style the active service content */
     .service-content.active {
       display: block;
     }
+    #homeseo .container,
+.home-webdesign {
+    padding-top: 50px
+}
+
+.home-graphicdesign>.container .bigletter,
+.home-webdesign>.container .bigletter {
+    top: -27px;
+    right: 15px;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%)
+}
+
+.home-webdesign .section-image {
+    width: 60%
+}
+
+.home-webdesign .section-image picture {
+    left: 100px;
+    top: 100px !important
+}
+
+.home-webdesign .section-image .pic-overlay {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    padding-left: 15px
+}
+
+.home-webdesign .section-image .pic-overlay picture {
+    width: auto;
+    max-width: 100%;
+    box-shadow: 0 0 20px -3px rgba(0, 0, 0, .45);
+    top: 0 !important;
+    left: 0
+}
+
+.home-webdesign .section-image .pic-overlay img {
+    box-shadow: 0 0 20px -3px rgba(0, 0, 0, .45)
+}
+
+.home-webdesign .section-image.show {
+    padding-bottom: 200px;
+    margin-bottom: -150px
+}
+img,
+span.bigletter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.cookie-law-button,
+.org a,
+ol li::before,
+span.bigletter {
+    font-family: PoppinsBold, sans-serif
+}
+.awards-box .year,
+.notificator a:hover,
+.partners-box .year,
+.site-footer .footer-info a:hover,
+.site-footer a:hover,
+code,
+ol li::before,
+span.bigletter.animate-bigletter.show {
+    color: #facc16
+}
+span.bigletter {
+    user-select: none;
+    position: absolute;
+    display: block;
+    color: #facc16;
+    font-size: 300px;
+    font-weight: bolder;
+    line-height: 1
+}
+
 
 
 
@@ -115,7 +311,7 @@
 
 <body>
 
-  <div class="hero_area">
+  <div class="hero_area" style="background-color: white;">
     <!-- header section starts -->
     <header>
       <a class="navbar-brand" href="index.html">
@@ -148,138 +344,108 @@
     <div style="margin-top: 3rem;"></div>
 
   
-    <section class="service_section layout_padding " style="background: white;">
+    <section id="homewebdesign" class="home-webdesign page-section has-parallax scroll-show">
       <div class="container">
-        <div class="heading_container heading_center">
-          <h2 style="margin-top: -3rem;">
-            Our Services
-          </h2>
-        </div>
+          <span class="bigletter animate-bigletter">W</span>
+          <div class="section-image parallax" data-offset="50" data-parallax-offset="-500">
+              <picture>
+                  <source srcset="images/home/web/next-gen/webdesign.webp" type="image/webp">
+                  <source srcset="images/home/web/webdesign.png" type="image/png">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/home/web/webdesign.png" alt="web design" width="695" height="438">
+              </picture>
+              <div class="pic-overlay">
+                  <picture>
+                      <source srcset="images/home/web/wd-over1.webp" type="image/webp">
+                      <source srcset="images/home/web/wd-over1.jpg" type="image/jpeg">
+                      <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/home/web/wd-over1.jpg" alt="web design section overlay" class="parallax" data-offset="150" width="212" height="75" loading="lazy">
+                  </picture>
+                  <picture class="img-overlay">
+                      <source srcset="images/home/web/wd-over2.webp" type="image/webp">
+                      <source srcset="images/home/web/wd-over2.jpg" type="image/jpeg">
+                      <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/home/web/wd-over2.jpg" alt="web design section overlay" class="parallax" data-offset="250" width="195" height="307" loading="lazy">
+                  </picture>
+              </div>
+          </div>
+          <div class="section-content">
+              <h2 class="section-title"><span class="rev-text temp-hide">Web design</span></h2>
+              <p class="section-subtitle">
+                  <span class="rev-text temp-hide">Unique web design solutions made with love and in accordance with the newest technologies.</span> </p>
+              <p>
+                  <span class="rev-text temp-hide write-all">PopArt Studio is a full-service, interactive agency offering innovative web design & branding solutions which move the boundaries. Our sophisticated approach to the development of digital experiences exceeds all expectations.</span>                        </p>
+          </div>
+          <div class="draggable-btn">
+              <a class="x-btn load-cta" href="web-design-agency.html" title="Design and development of feature-rich websites"><span></span></a>
+          </div>
       </div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="box ">
-              <div class="img-box">
-                <img src="/images/coding1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Web Development 
-                </h4>
-                <p>
-                  We build custom websites which is user friendly and scalable, designing, building, and maintaining the  web applications.   </p>    
-                         <a href="webDevelopment.html">
-                  Read More
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box ">
-              <div class="img-box">
-                <img src="/images/s6.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Web Designing 
-                </h4>
-                <p>
-                  Web designing for your company website enhances user experience,visually communicates the brand's professionalism and credibility.    </p>
-                            <a href="pages/rankTracking.html">
-                  Read More
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="/images/SEO-1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Search Engine Optimization
-                </h4>
-                <p>
-                  It involves evaluating the links that point to your website (backlinks) as well as those pointing to your competitors' websites.              </p>
-                <a href="pages/backlink.html">
-                  Read More
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box ">
-              <div class="img-box">
-                <img  src="/images/social-media1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Social Media Optimization
-                </h4>
-                <p>
-                 It helps identifying the specific words keywords that people use in search engines to find info related to your website.            </p>
-                <a href="pages/keywordresearch.html">
-                  Read More
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box ">
-              <div class="img-box">
-                <img   src="/images/digital marketing Icon.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Digital marketing 
-                </h4>
-                <p>
-                  Optimizing individual web pages to improve their search engine rankings. This includes optimizing meta tags, content, headings, and internal linking.              </p>
-                <a href="pages/onPage.html">
-                  Read More
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box ">
-              <div class="img-box">
-                <img src="/images/app-development1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Mobile App Development
-                </h4>
-                <p>
-                  We specialize in mobile app development to create innovative solutions and customized mobile apps to meet the unique needs and goals of our clients. 
-                                         </p>
-                <a href="pages/ecommerce.html">
-                  Read More
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>    
+  </section>   
 
     <!-- server section -->
-    <!-- info section -->
-    <section class="info_section layout_padding2">
+ 
+  <!-- .page-section -->
+
+  <section id="homewebdev" class="home-webdevelopment page-section scroll-show">
+      <div class="container">
+          <span class="bigletter animate-bigletter">D</span>
+          <div class="section-content">
+              <h2 class="section-title"><span class="rev-text temp-hide">Web development</span></h2>
+              <p class="section-subtitle">
+                  <span class="rev-text temp-hide">We devote our undivided attention to writing every line of code, which is a proof of a well-defined methodology and impeccable reasoning.</span> </p>
+              <p>
+                  <span class="rev-text temp-hide write-all">Somewhere in between the Swiss watch and poetry, development is a vocation which generates quality websites, modern webshops, and unique web platforms. By using cutting-edge technologies, our programmers constantly develop their skills and follow modern web trends.</span>                        </p>
+              <p>
+                  <span class="rev-text temp-hide write-all">We can help you to choose adequate technologies for your web projects.</span> </p>
+          </div>
+          <ul class="clear">
+              <li>HTML5</li>
+              <li>PHP</li>
+              <li>WordPress</li>
+              <li>CSS3</li>
+              <li>MySQL</li>
+              <li>Online Shops</li>
+              <li>Sass</li>
+              <li>Laravel</li>
+              <li>Web applications</li>
+              <li>JavaScript</li>
+              <li>Symfony</li>
+              <li>Custom solutions</li>
+          </ul>
+          <div class="draggable-btn">
+              <a class="x-btn load-cta" href="web-development-serbia.html" title="Platform and app development"><span></span></a>
+          </div>
+      </div>
+  </section>
+  <!-- .page-section -->
+
+  <section id="homegraphdesign" class="home-graphicdesign has-parallax page-section scroll-show">
+      <div class="container">
+          <span class="bigletter animate-bigletter">G</span>
+
+          <div class="section-image">
+              <div class="parallax" data-offset="50" data-parallax-offset="-500">
+                  <picture>
+                      <source srcset="images/home/graphic/full-graphic.webp" type="image/webp">
+                      <source srcset="images/home/graphic/full-graphic.png" type="image/png">
+                      <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/home/graphic/full-graphic.png" alt="graficki elementi" class="abs-pos folder" width="592" height="572" loading="lazy">
+                  </picture>
+              </div>
+          </div>
+
+
+          <div class="section-content">
+              <h2 class="section-title"><span class="rev-text temp-hide">Graphic design</span></h2>
+              <p class="section-subtitle"><span class="rev-text temp-hide">We can help you shape and build your brand.</span></p>
+              <p>
+                  <span class="rev-text temp-hide write-all">By using appropriate and effective colors, we define your brand identity and create inspiring narratives which transmit the message and arouse emotions.</span> </p>
+              <p>
+                  <span class="rev-text temp-hide write-all">Memorable logo design, outstanding corporate identity and business-changing labels are only some of the solutions we offer. Ever since 2009, we are illustrating for brands, both big and small.</span>                        </p>
+          </div>
+          <div class="draggable-btn">
+              <a class="x-btn load-cta" href="graphic_design.html" title="Graphic design services"><span></span></a>
+          </div>
+      </div>
+  </section>
+     <!-- info section -->
+     <section class="info_section layout_padding2">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
